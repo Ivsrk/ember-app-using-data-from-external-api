@@ -1,0 +1,9 @@
+
+<h2>This is a Posts User page</h2>
+{{#each posts as |post|}}
+    <h3>Id:{{post.id}}</h3>
+    title:{{post.title}}<br>
+    
+    User:{{post.userId.name}}<br>
+
+{{/each}}

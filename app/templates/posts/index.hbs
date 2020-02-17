@@ -1,0 +1,9 @@
+<h1>This is a Posts page</h1>
+{{#each posts as |post|}}
+    <h3>Id:{{post.id}}</h3>
+      
+    Post: <a href="posts/{{post.id}}">{{post.title}}</a><br>
+    user: <a href="posts/user/{{post.userId.id}}">{{post.userId.name}}</a><br>
+   
+
+{{/each}}
